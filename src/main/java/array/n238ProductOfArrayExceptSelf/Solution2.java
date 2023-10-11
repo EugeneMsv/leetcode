@@ -2,6 +2,7 @@ package array.n238ProductOfArrayExceptSelf;
 
 public class Solution2 {
 
+  // Passes the test but actually. The complexity is O(n*log(n)) because of the O(log(n)) from pow
   public int[] productExceptSelf(int[] nums) {
     int[] frequency = new int[61];
 
