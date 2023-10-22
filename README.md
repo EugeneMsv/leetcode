@@ -54,7 +54,6 @@
 - Objects.hash `static int hash(Object... values) // Generates a hash code for a sequence of input values.`
 - Integer.parseInt `static int parseInt(String s) // Parses the string argument as a signed decimal integer. The characters in the string must all be decimal digits`
 - Character.isDigit `static boolean isDigit(char ch) // Determines if the specified character is a digit.`
-- Character.isDigit `static boolean isDigit(char ch) // Determines if the specified character is a digit.`
 - Character.isAlphabetic `static boolean isAlphabetic(int codePoint)  // Determines if the specified character (Unicode code point) is alphabetic.`
 - Arrays.asList `static <T> List<T> asList(T... a)  // Returns a fixed-size list backed by the specified array.`
 
