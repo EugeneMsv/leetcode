@@ -6,8 +6,8 @@
   ```java 
     Stack<Integer> stack = new Stack<>();
     stack.push(num); // O(1) Pushes an item onto the top of this stack.
-    stack.pop(num); // O(1) Removes the object at the top of this stack and returns that object as the value of this function.
-    stack.peek(num); // O(1) Looks at the object at the top of this stack without removing it from the stack.
+    stack.pop(num); // O(1) Removes the object at the top of this stack and returns that object as the value of this function. Exception if empty
+    stack.peek(num); // O(1) Looks at the object at the top of this stack without removing it from the stack. Exception if empty.
     stack.size(); // O(1) Returns size of the stack
     ```
 - PriorityQueue aka Heap
@@ -56,6 +56,9 @@
 - Character.isDigit `static boolean isDigit(char ch) // Determines if the specified character is a digit.`
 - Character.isAlphabetic `static boolean isAlphabetic(int codePoint)  // Determines if the specified character (Unicode code point) is alphabetic.`
 - Arrays.asList `static <T> List<T> asList(T... a)  // Returns a fixed-size list backed by the specified array.`
+- Collections.sort `void sort(List<T> list, Comparator<? super T> c)  // Sorts the specified list according to the order induced by the specified comparator.`
+- Comparator.comparing `Comparator.comparing(Car::position)  // Accepts a function that extracts a Comparable sort key from a type T, and returns a Comparator<T> that compares by that sort key.`
+- comparator.reversed `Comparator.comparing(Car::position).reversed() // Returns a comparator that imposes the reverse ordering of this comparator.`
 
 ### Common knowledge
 
