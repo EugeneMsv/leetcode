@@ -22,35 +22,35 @@ public class Solution {
 
   public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
-    int oveflowed = 0;
+    int overflowed = 0;
     ListNode first = l1;
     ListNode second = l2;
     ListNode dummyHead = new ListNode();
     ListNode sumNode = dummyHead;
     while (first != null && second != null) {
-      int sum = first.val + second.val + oveflowed;
-      oveflowed = sum / 10;
+      int sum = first.val + second.val + overflowed;
+      overflowed = sum / 10;
       sumNode.next = new ListNode(sum % 10);
       sumNode = sumNode.next;
       first = first.next;
       second = second.next;
     }
     while (first != null) {
-      int sum = first.val + oveflowed;
-      oveflowed = sum / 10;
+      int sum = first.val + overflowed;
+      overflowed = sum / 10;
       sumNode.next = new ListNode(sum % 10);
       sumNode = sumNode.next;
       first = first.next;
     }
     while (second != null) {
-      int sum = second.val + oveflowed;
-      oveflowed = sum / 10;
+      int sum = second.val + overflowed;
+      overflowed = sum / 10;
       sumNode.next = new ListNode(sum % 10);
       sumNode = sumNode.next;
       second = second.next;
     }
-    if (oveflowed > 0) {
-      sumNode.next = new ListNode(oveflowed);
+    if (overflowed > 0) {
+      sumNode.next = new ListNode(overflowed);
     }
 
     return dummyHead.next;
