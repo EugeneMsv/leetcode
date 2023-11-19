@@ -9,6 +9,10 @@ import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Set;
 
+
+// The current implementation is not the most effective, since its better to build heap only when
+// feed is requested. Moreover if user unfollows than later follows back it may create duplicates
+// in the feed.
 public class Twitter {
 
   private static final int FEED_SIZE = 10;
