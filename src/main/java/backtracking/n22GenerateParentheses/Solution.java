@@ -1,4 +1,4 @@
-package backtracing.n22GenerateParentheses;
+package backtracking.n22GenerateParentheses;
 
 import java.util.LinkedList;
 import java.util.List;
