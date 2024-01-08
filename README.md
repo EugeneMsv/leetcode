@@ -60,7 +60,8 @@
 - Collections.sort `void sort(List<T> list, Comparator<? super T> c)  // Sorts the specified list according to the order induced by the specified comparator.`
 - Comparator.comparing `Comparator.comparing(Car::position)  // Accepts a function that extracts a Comparable sort key from a type T, and returns a Comparator<T> that compares by that sort key.`
 - comparator.reversed `Comparator.comparing(Car::position).reversed() // Returns a comparator that imposes the reverse ordering of this comparator.`
-- Arrays.copyOfRange `Arrays.copyOfRange(fromInclusive, toExclusive) // Copies the specified range of the specified array into a new array.`
+- Arrays.copyOfRange `Arrays.copyOfRange(originalArray,fromInclusive, toExclusive) // Copies the 
+  specified range of the specified array into a new array.`
 - Arrays.stream(nums).boxed().collect(Collectors.toList())) `Modifiable list from numbers array`
 
 ### Common knowledge
