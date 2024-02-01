@@ -46,6 +46,10 @@
   set.contains(k); // O(1) Returns true if this set contains the specified element.
   set.size(); // O(1) Returns the number of elements in this set 
   ```
+- List
+  ```java 
+  int[] nums = list.toArray(int[]::new); // Converts list to array
+  ```
 
 ### Other functions to know
 
