@@ -36,7 +36,15 @@
   map.containsKey(k); // O(1) Returns true if this map contains a mapping for the specified key
   map.size(); // O(1) Returns the number of key-value mappings in this map
   map.remove(k); // O(1) If this map contains a mapping from key k to value v such that Objects.equals(key, k), that mapping is removed. 
-  ```    
+  ```
+- NavigableMap
+  ```java
+  NavigableMap<Integer,Integer> map = new TreeMap<>();
+  Map.Entry<K,V> ceilingEntry(K key); // Returns a key-value mapping associated with the least key greater than or equal to the given key, or null if there is no such key.
+  Map.Entry<K,V> floorEntry(K key); // Returns a key-value mapping associated with the greatest key less than or equal to the given key, or null if there is no such key.
+  NavigableMap<K,V> headMap(K toKey, boolean inclusive); // Returns a view of the portion of this map whose keys are less than (or equal to, if inclusive is true) toKey. The returned map is backed by this map, so changes in the returned map are reflected in this map, and vice-versa.
+  NavigableMap<K,V> tailMap(K fromKey, boolean inclusive); // Returns a view of the portion of this map whose keys are greater than (or equal to, if inclusive is true) fromKey. The returned map is backed by this map, so changes in the returned map are reflected in this map, and vice-versa
+  ```
 - Set
   ```java 
   Map<Integer> set = new HashSet<>();
