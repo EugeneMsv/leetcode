@@ -6,10 +6,10 @@ public class Solution {
     if (x == 1.00F) {
       return 1.0;
     }
-    return calc(x, n);
+    return calc(x, (long) n);
   }
 
-  private double calc(double x, int n) {
+  private double calc(double x, long n) {
     if (n == 0) {
       return 1;
     }
