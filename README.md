@@ -79,3 +79,11 @@
 ### Common knowledge
 
 - 26 letters in English alphabet
+- Bitwise operations:
+  - Bitwise AND: `a & b`
+  - Bitwise OR: `a | b` 
+  - Bitwise XOR: `a ^ b`
+  - Bitwise NOT: `~a` 
+  - Bitwise Left Shift: `a << 2` 
+  - Bitwise Right Shift: `a >> 2`
+  - Bitwise Unsigned Right Shift: `a >>> 2`
