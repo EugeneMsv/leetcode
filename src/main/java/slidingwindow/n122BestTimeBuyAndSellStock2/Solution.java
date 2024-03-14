@@ -31,7 +31,7 @@ public class Solution {
         continue;
       }
 
-      // When next buy is smaller and we don't yest sold
+      // When the next buy is smaller and we haven't yet sold
       if (sellIdx == -1) {
         if (prices[buyIdx] < curPrice) {
           // found first local place to sell
