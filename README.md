@@ -57,6 +57,7 @@
 - List
   ```java 
   int[] nums = list.toArray(int[]::new); // Converts list to array
+  list.set(idx, newValue); Replaces the element at the specified position in this list with the specified elemen
   ```
 
 ### Other functions to know
@@ -75,6 +76,7 @@
 - Arrays.copyOfRange `Arrays.copyOfRange(originalArray,fromInclusive, toExclusive) // Copies the 
   specified range of the specified array into a new array.`
 - Arrays.stream(nums).boxed().collect(Collectors.toList())) `Modifiable list from numbers array`
+- new Random().nextInt(exclusiveBound) `Returns a pseudorandom, uniformly distributed int value between 0 (inclusive) and the specified value (exclusive)`
 
 ### Common knowledge
 
