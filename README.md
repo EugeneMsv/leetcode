@@ -74,7 +74,7 @@
 - Character.isAlphabetic `static boolean isAlphabetic(int codePoint)  // Determines if the specified character (Unicode code point) is alphabetic.`
 - Character.forDigit(rest,10) `Determines the character representation for a specific digit in the specified radix`
 - String.toCharArray `char[] toCharArray() // Converts this string to a new character array.`
-- 
+- Character.getNumericValue() `int getNumericValue(char ch) // Returns the int value that the specified Unicode character represents`
 #### Collections
 - Arrays.asList `static <T> List<T> asList(T... a)  // Returns a fixed-size list backed by the specified array.`
 - Collections.sort `void sort(List<T> list, Comparator<? super T> c)  // Sorts the specified list according to the order induced by the specified comparator.`
