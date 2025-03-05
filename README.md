@@ -14,6 +14,8 @@
   ```java 
     PriorityQueue<Integer> minHeap = new PriorityQueue<>();
     PriorityQueue<Integer> maxHeap = new PriorityQueue<>(capacity, Collections.reverseOrder())
+    PriorityQueue<Integer> maxHeap = new PriorityQueue<>(capacity, (a,b) -> b - a)
+    PriorityQueue<Integer> minHeap = new PriorityQueue<>(capacity, (a,b) -> a - b)
     heap.add(num); // O(log(n)) Inserts the specified element into this priority queue.
     heap.poll(num); // O(1) Retrieves and removes the head of this queue, or returns null if this queue is empty.
     heap.peek(num); // O(1) Returns: the head of this queue, or null if this queue is empty.
@@ -75,6 +77,8 @@
 - Character.forDigit(rest,10) `Determines the character representation for a specific digit in the specified radix`
 - String.toCharArray `char[] toCharArray() // Converts this string to a new character array.`
 - Character.getNumericValue() `int getNumericValue(char ch) // Returns the int value that the specified Unicode character represents`
+- StringBuilder.setLength(intValue) `Sets the length of the character sequence. If 0, then 
+  resets the builder`
 #### Collections
 - Arrays.asList `static <T> List<T> asList(T... a)  // Returns a fixed-size list backed by the specified array.`
 - Collections.sort `void sort(List<T> list, Comparator<? super T> c)  // Sorts the specified list according to the order induced by the specified comparator.`
@@ -84,7 +88,14 @@
   specified range of the specified array into a new array.`
 - Arrays.stream(nums).boxed().collect(Collectors.toList())) `Modifiable list from numbers array`
 - Objects.hash `static int hash(Object... values) // Generates a hash code for a sequence of input values.`
+- Arrays.fill(array, value); `// Assigns the specified int/long/boolean value to each element of the 
+  specified array`
 
+### Modular
+- (A * B) mod C = (A mod C * B mod C) mod C
+- (A + B) mod C = (A mod C + B mod C) mod C
+### Properties of exponents
+![img.png](img.png)
 ### Common knowledge
 
 - 26 letters in English alphabet
@@ -96,3 +107,7 @@
   - Bitwise Left Shift: `a << 2` 
   - Bitwise Right Shift: `a >> 2`
   - Bitwise Unsigned Right Shift: `a >>> 2`
+  - Quadratic Formula ![img_2.png](img_2.png)
+  - Progressions
+    
+    ![img_3.png](img_3.png)
